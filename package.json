@@ -1,5 +1,5 @@
 {
-    "name": "@dopamyn/jsonld-deep-equal",
+    "name": "@dopamyn/json-deep-equal",
     "author": "Gaetan Le Gac <contact@gaetan-legac.fr>",
     "description": "Check if json objects contains the same values (ignoring arrays order)",
     "keywords": [
@@ -18,7 +18,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git://github.com/dopamyn/jsonld-deep-equal.git"
+        "url": "git://github.com/dopamyn/json-deep-equal.git"
     },
     "scripts": {
         "build": "tsc",
