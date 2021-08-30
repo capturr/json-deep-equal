@@ -1,0 +1,31 @@
+{
+    "name": "@dopamyn/jsonld-deep-equal",
+    "author": "Gaetan Le Gac <contact@gaetan-legac.fr>",
+    "description": "Check if json objects contains the same values (ignoring arrays order)",
+    "keywords": [
+        "json",
+        "deep",
+        "equal",
+        "compare",
+        "recursive"
+    ],
+    "version": "0.0.1",
+    "license": "MIT",
+    "private": false,
+    "main": "bin/index.js",
+    "files": [
+        "bin"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/dopamyn/jsonld-deep-equal.git"
+    },
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc -w",
+        "prepare": "npm run build"
+    },
+    "devDependencies": {
+        "typescript": "^4.3.5"
+    }
+}
