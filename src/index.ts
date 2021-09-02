@@ -1,4 +1,4 @@
-export default function jsonDeepEquals(
+export default function jsonDeepEqual(
     [reference, ...items]: any[],
     debug: boolean = false,
     path: (string | number)[] = []
@@ -32,7 +32,7 @@ export default function jsonDeepEquals(
 
                 // La valeur de référence existe dans l'un des items de l'array
                 for (let i = 0; i < array.length; i++)
-                    if (jsonDeepEquals([refval, array[i]], debug, [...path, i]))
+                    if (jsonDeepEqual([refval, array[i]], debug, [...path, i]))
                         // Valeur trouvée dans l'un des item, passage à la valeur suivante
                         continue searchForExistance;
 
@@ -57,7 +57,7 @@ export default function jsonDeepEquals(
             const vref = reference[key];
             const vres = items.map((r) => r[key]);
 
-            if (!jsonDeepEquals([vref, ...vres], debug, [...path, key])) 
+            if (!jsonDeepEqual([vref, ...vres], debug, [...path, key])) 
                 return false;
         }
 

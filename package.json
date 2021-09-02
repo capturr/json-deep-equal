@@ -1,5 +1,5 @@
 {
-    "name": "@dopamyn/json-deep-equal",
+    "name": "json-deep-equal",
     "author": "Gaetan Le Gac <contact@gaetan-legac.fr>",
     "description": "Check if json objects contains the same values (ignoring arrays order)",
     "keywords": [
